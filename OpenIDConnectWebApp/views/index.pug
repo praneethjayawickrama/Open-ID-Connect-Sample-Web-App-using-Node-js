@@ -1,0 +1,47 @@
+extends base.pug
+
+block body
+
+  h1.text-center Welcome to the OpenID Connect Implement Web Application
+
+  .jumbotron
+    h1.text-center Web Application Login page
+    p.
+      
+
+    h4.text-center= "___________________________________________"
+    
+    form(action="/new_movie" method="POST")
+    h5.text-center User Name :
+      input(type="text" name="user name" placeholder="") 
+
+    h5.text-center  Password_ :
+      input(type="password" name="password" placeholder="")
+       
+
+    h4.text-center 
+          input.btn.btn-primary(type='submit', value='Login')
+
+    h4.text-center= "___________________________________________"
+
+    p.
+
+    
+    
+
+    
+    
+
+    h4.text-center 
+     a(href='/login')
+      button.btn.btn-primary(type='submit') Login with Okta
+      
+              
+   
+
+  h7.text-center Please click here to #[a(class='button' href="/login") Login with Okta] to continue.
+
+
+
+
+    

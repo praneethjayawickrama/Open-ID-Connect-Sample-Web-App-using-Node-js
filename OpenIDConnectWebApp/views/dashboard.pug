@@ -1,0 +1,32 @@
+extends base.pug
+
+block body
+  h1.text-center Welcome to the User Dashboard
+
+  .jumbotron
+    ul
+      h3 Hello ...#{user.name} ...!!!!
+      h3 _______________________________________  
+         
+      li Your Email Address is: #{user.preferred_username}
+      li Your First Name is: #{user.given_name}
+      li Your Last Name is: #{user.family_name}
+      li Your Date of Birth is: #{user.birthdate}
+      li Your Gender is: #{user.gender}
+
+
+      
+    
+      h3 _______________________________________ 
+      
+
+    p.
+         If you'd like to logout, please #[a(href="/logout") click here].
+
+
+  h2.text-center #{jwt}
+
+  h6.text-center Please click here to check JWT Verification
+   h4.text-center 
+     a(href='/jwt')
+      button.btn.btn-primary(type='submit') Verify the JWT
